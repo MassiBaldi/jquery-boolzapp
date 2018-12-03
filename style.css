@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.container_left {
+  float: left;
+  width: 35%;
+  height: 100vh;
+  border-right: 1px solid lightgrey;
+}
+.container_right {
+  float: left;
+  width: 65%;
+  height: 100vh;
+}
+.nav_left, .nav_right {
+  float: left;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #eeeeee;
+}
+.notifiche {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  margin-top: 60px;
+  padding-left: 20px;
+  background: #9de1fe;
+}
+.bell {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: white;
+  color: #9de1fe;
+}
+.riceviNotifiche {
+  padding-left: 20px;
+  cursor: pointer;
+}
+.riceviNotifiche h3 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #2b3940;
+}
+.riceviNotifiche a {
+ text-decoration: none;
+ font-size: 14px;
+ font-weight: 300;
+ color: #384c56;
+}
+.riceviNotifiche a:hover {
+  text-decoration: underline;
+}
+.cerca_chat {
+  /* z-index: 1;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  background: #fbfbfb;
+}
+.cerca {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  background: white;
+}
+.search {
+  width: 18px;
+  height: 18px;
+  padding-left: 15px;
+}
+.search img {
+  height: 18px;
+}
+.cerca input {
+  border-style: none;
+  width: 90%;
+  height: 100%;
+  margin-left: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+.all_chat {
+  width: 100%;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  background: white;
+}
+.single_chat {
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.single_chat_profilo {
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 20%;
+  height: 70px;
+}
+.single_chat_profilo img {
+  height: 70px;
+}
+.single_chat_right {
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 80%;
+  height: 70px;
+  border-bottom: 1px solid lightgrey;
+}
+.single_chat_right h3 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #2b3940;
+}
+.single_chat_right p {
+  display: inline-block;
+  font-size: 13px;
+  padding: 5px;
+  color: grey;
+}
+.chat {
+  width: 100%;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  margin-top: 60px;
+  background: #e5ddd5;
+  background-image: url('background.png');
+}
+.footer {
+  /* z-index: 1;
+  bottom: 0;
+  left: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  background: #efefef;
+}
+.img_profilo {
+  float: left;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 60%;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.profilo {
+  width: 45px;
+  height: 45px;
+}
+.profilo img {
+  height: 45px;
+  border-radius: 100%;
+}
+.navLeft_item {
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  width: 40%;
+  height: 100%;
+}
+.img_profilo_right {
+  float: left;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.img_profilo_right h3 {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 15px;
+}
+.navRight_item {
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+}
+.emoji, .mic {
+  width: 25px;
+  height: 25px;
+}
+.emoji img, .mic img {
+  height: 25px;
+}
+input {
+  width: 90%;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.template {
+  /* margin: 0 15px; */
+}
+.verde {
+  display: none;
+  max-width: 300px;
+  padding: 10px;
+  margin: 3px 50px;
+  border-radius: 5px;
+  background: #dcf8c6;
+}
+.bianco {
+  display: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background: white;
+}
+.active {
+  display: block;
+}

@@ -62,9 +62,6 @@
   text-decoration: underline;
 }
 .cerca_chat {
-  /* z-index: 1;
-  top: 0;
-  left: 0; */
   width: 100%;
   height: 50px;
   padding: 10px 20px;
@@ -89,6 +86,7 @@
 }
 .cerca input {
   border-style: none;
+  outline: none;
   width: 90%;
   height: 100%;
   margin-left: 20px;
@@ -107,6 +105,9 @@
   padding-left: 20px;
   padding-right: 10px;
 }
+.single_chat:hover{
+  background: #e9ebeb;
+}
 .single_chat_profilo {
   display: flex;
   align-items: center;
@@ -115,7 +116,9 @@
   height: 70px;
 }
 .single_chat_profilo img {
-  height: 70px;
+  height: 45px;
+  border: 1px solid #939393;
+  border-radius: 100%;
 }
 .single_chat_right {
   display: flex;
@@ -125,14 +128,26 @@
   height: 70px;
   border-bottom: 1px solid lightgrey;
 }
+.chat_item {
+  width: 100%;
+  position: relative;
+}
 .single_chat_right h3 {
   font-size: 15px;
   font-weight: 300;
   color: #2b3940;
 }
-.single_chat_right p {
+.single_chat_right span.textMessage {
   display: inline-block;
   font-size: 13px;
+  padding: 5px;
+  color: grey;
+}
+.single_chat_right span.oraMessage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
   padding: 5px;
   color: grey;
 }
@@ -145,9 +160,6 @@
   background-image: url('background.png');
 }
 .footer {
-  /* z-index: 1;
-  bottom: 0;
-  left: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,29 +228,40 @@
   height: 25px;
 }
 input {
+  border: none;
+  outline: none;
   width: 90%;
   height: 40px;
-  border: none;
   border-radius: 18px;
   padding-left: 20px;
   font-size: 15px;
 }
-.template {
-  /* margin: 0 15px; */
+.messaggiV {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
 }
-.verde {
+.messaggiB {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+}
+.template {
   display: none;
-  max-width: 300px;
+}
+.verde, .bianco {
+  /* display: none; */
+  max-width: 350px;
   padding: 10px;
   margin: 3px 50px;
   border-radius: 5px;
+}
+.verde {
   background: #dcf8c6;
 }
 .bianco {
-  display: none;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
   background: white;
 }
 .active {

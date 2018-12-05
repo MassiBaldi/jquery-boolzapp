@@ -3,9 +3,11 @@ $(document).ready(function(){
     if (event.which == 13){
       var testoValue = $('#messaggio').val();
       var testoTemplate = $('.template .messaggiV').clone();
+      var ora = (new Date().getHours() + ':' + aggiungiZero(new Date().getMinutes()));
+      console.log(ora);
 
-      testoTemplate.children('.verde > .messaggioUtente').text(testoValue);
-      testoTemplate.children('.verde > .oraEsatta').text(ora);
+      testoTemplate.find('.messaggioUtente').text(testoValue);
+      testoTemplate.find('.oraEsatta').text(ora);
 
       var ora = (new Date().getHours() + ':' + aggiungiZero(new Date().getMinutes()));
       console.log(ora);
@@ -22,7 +24,8 @@ $(document).ready(function(){
 
       setTimeout(function(){
         var rispostaTemplate = $('.template .messaggiB').clone();
-        rispostaTemplate.children('.bianco').text('Ok');
+        rispostaTemplate.find('.messaggioPc').text('Ok');
+        rispostaTemplate.find('.oraEsatta').text(ora);
         $('.chat').append(rispostaTemplate);
       },1000);
     }

@@ -37,7 +37,7 @@
           <div class="search">
             <img src="search.svg" alt="">
           </div>
-          <input type="text" placeholder="Cerca o inizia una nuova chat" value="">
+          <input id="cercaChat"type="text" placeholder="Cerca o inizia una nuova chat" value="">
         </div>
       </div>
       <div class="all_chat">
@@ -47,7 +47,20 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Michele</h3>
+              <h3 id="name">Michele</h3>
+              <img src="spunte-blu.svg" alt="">
+              <span class="textMessage ">Lorem ipsum...</span>
+              <span class="oraMessage">12:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="single_chat">
+          <div class="single_chat_profilo">
+            <img src="avatar.jpg" alt="">
+          </div>
+          <div class="single_chat_right">
+            <div class="chat_item">
+              <h3 id="name">Massi</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -60,7 +73,7 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Massi</h3>
+              <h3 id="name">Fabio</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -73,7 +86,7 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Fabio</h3>
+              <h3 id="name">Roberto</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -86,7 +99,7 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Roberto</h3>
+              <h3 id="name">Chiara</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -99,7 +112,7 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Chiara</h3>
+              <h3 id="name">Vittoria</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -112,7 +125,7 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Vittoria</h3>
+              <h3 id="name">Laura</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -125,20 +138,7 @@
           </div>
           <div class="single_chat_right">
             <div class="chat_item">
-              <h3>Laura</h3>
-              <img src="spunte-blu.svg" alt="">
-              <span class="textMessage">Lorem ipsum...</span>
-              <span class="oraMessage">12:00</span>
-            </div>
-          </div>
-        </div>
-        <div class="single_chat">
-          <div class="single_chat_profilo">
-            <img src="avatar.jpg" alt="">
-          </div>
-          <div class="single_chat_right">
-            <div class="chat_item">
-              <h3>Pippo</h3>
+              <h3 id="name">Pippo</h3>
               <img src="spunte-blu.svg" alt="">
               <span class="textMessage">Lorem ipsum...</span>
               <span class="oraMessage">12:00</span>
@@ -182,12 +182,15 @@
       <div class="messaggiV">
         <div class="verde">
 
+          <span class="messaggioUtente">ciao</span>
+          <span class="oraEsatta">12:00</span>
         </div>
       </div>
 
       <div class="messaggiB">
         <div class="bianco">
 
+        <span class="oraEsatta"></span>
         </div>
       </div>
 

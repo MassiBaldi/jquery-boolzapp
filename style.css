@@ -106,7 +106,10 @@
   padding-right: 10px;
 }
 .single_chat:hover{
-  background: #e9ebeb;
+  background: #f4f5f5;
+}
+.single_chat:hover i {
+  display:
 }
 .single_chat_profilo {
   display: flex;
@@ -151,11 +154,25 @@
   padding: 5px;
   color: grey;
 }
-.chat {
+.single_chat_right i {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  color: grey;
+}
+.chat_container {
   width: 100%;
   height: calc(100vh - 120px);
-  overflow-y: auto;
   margin-top: 60px;
+}
+.chat {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
   background: #e5ddd5;
   background-image: url('background.png');
 }
@@ -257,6 +274,10 @@ input {
   padding: 7px 70px 7px 10px;
   margin: 3px 50px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.verde:hover i, .bianco:hover i {
+  display: block;
 }
 .verde {
   background: #dcf8c6;
@@ -270,6 +291,43 @@ input {
   right: 5px;
   font-size: 10px;
   color: grey;
+}
+.verde .fas, .bianco .fas {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  color: lightgrey;
+}
+.activebackground {
+  background: #E9EBEB;
+}
+.dropmenuV, .dropmenuB {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 27px;
+  width: 180px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px grey;
+  background: white;
+}
+.dropmenuB {
+  left: 80px;
+  top: 27px;
+}
+.dmItemV, .dmItemB {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  font-size: 15px;
+}
+.dmItemV:hover, .dmItemB:hover {
+  background: #f4f5f5;
 }
 .active {
   display: block;
